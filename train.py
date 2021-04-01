@@ -55,7 +55,7 @@ def train(args):
         dist_k_given_m = dist.ConditionalTransformedDistribution(dist_base_k, k_transform)
 
         modules = torch.nn.ModuleList(k_transform).to(device)
-        optimizer = torch.optim.Adam(modules.parameters(), lr=args.lr, weight_decay=args.beta)
+        optimizer = torch.optim.AdamW(modules.parameters(), lr=args.lr, weight_decay=args.beta)
 
         # train loop
         for epoch in range(args.epochs):
@@ -171,7 +171,7 @@ if __name__ == '__main__':
     parser.add_argument("--kinematic_region", help="kinematic train region", type=str, default='CRVR')
     parser.add_argument("--dim_m", help="conditional variable dimension (Higgs candidate mass)", type=int, default=2)
     parser.add_argument("--dim_k", help="train variable dimension (kinematics)", type=int, default=5)
-    parser.add_argument("--batch_size", help="train batch size", type=int, default=2**15)
+    parser.add_argument("--batch_size", help="train batch size", type=int, default=2**12)
     parser.add_argument("--num_flows", help="number of spline autoregressive flows for density estimation", type=int, default=2)
     parser.add_argument("--count_bins", help="number of spline bins for density estimation", type=int, default=10)
     parser.add_argument("--bound", help="spline tail bound", type=int, default=1.0)
