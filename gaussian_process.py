@@ -1,3 +1,5 @@
+# credit to Sean Joseph Gasiorowski (https://gitlab.cern.ch/sgasioro)
+
 import numpy as np
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF
@@ -168,7 +170,6 @@ class GPdensity:
         n_sig = ntot*frac_sig
 
         return n_sig
- 
 
 
 def main(fname, nbinsx, nbinsy, nEvents, ntag_reg):
