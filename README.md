@@ -1,6 +1,6 @@
 # diHiggs-flow Toolkit
 
-Neural density estimation of di-Higgs production at the LHC. (e.g. hh -> 4b). The toolkit can be used for investigating a variety of di-Higgs decay modes. The toolkit supports ![alt text](https://github.com/thomasgho/diHiggs-flow/blob/main/Thesis.pdf?raw=true)
+Neural density estimation of di-Higgs production at the LHC. (e.g. hh -> 4b). The toolkit can be used for investigating a variety of di-Higgs decay modes. Details are found ![here](https://github.com/thomasgho/diHiggs-flow/blob/main/Thesis.pdf?raw=true)
 
 
 # Background 
