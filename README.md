@@ -11,5 +11,5 @@ The Standard Model predicts the cross section of di-Higgs production to be small
 
 This toolkit models the conditional probability density of resolved di-Higgs events. The example used is hh -> 4b events, given that it is the most dominant di-Higgs decay mode. In this scheme, the search for di-Higgs production is done by modelling the production of b-quark jets at the LHC. Such a task allows us to estimate background, allowing us to formulate a statistically unbiased analysis of di-Higgs production. 
 
-![alt text](https://github.com/thomasgho/diHiggs-flow/blob/main/Resolved.png?raw=true)
+![alt text](https://github.com/thomasgho/diHiggs-flow/blob/main/Resolved.png?raw=true| width=100)
 
